@@ -1,2 +1,1 @@
-# M2AC
-f
+M2AC - Atlas creator for TrekBuddy
