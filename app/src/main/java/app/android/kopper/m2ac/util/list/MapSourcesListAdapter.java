@@ -119,7 +119,7 @@ public class MapSourcesListAdapter extends BaseAdapter {
             if(selectedZooms==null)
                 selectedZooms=new TreeSet<>();
 
-            final FlowLayout zoomsLayout=(FlowLayout)rowView.findViewById(R.id.zoomLayot);
+            final FlowLayout zoomsLayout=(FlowLayout)rowView.findViewById(R.id.zoomLayout);
             for(int i=mapSource.getMinZoom();i<=mapSource.getMaxZoom()&&i<=maxZoom;i++) {
                 CheckBox t=new CheckBox(context);
                 Def def=new Def(mapSource.getName(),i);

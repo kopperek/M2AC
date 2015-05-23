@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:weightSum="3.0"
-    >
+              android:baselineAligned="false">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:orientation="vertical"
                   android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Atlas name"
+            android:text="@string/label_atlas_name"
             android:id="@+id/atlasNameLabel"/>
 
         <EditText
@@ -45,7 +45,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create atlas"
+            android:text="@string/button_create_atlas"
             android:id="@+id/bCreateAtlas"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"

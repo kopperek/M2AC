@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Atlas name"
+        android:text="@string/label_atlas_name"
         android:id="@+id/atlasNameLabel"/>
 
     <EditText
@@ -27,7 +27,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create atlas"
+        android:text="@string/button_create_atlas"
         android:id="@+id/bCreateAtlas"
         android:layout_gravity="center_horizontal"/>
 

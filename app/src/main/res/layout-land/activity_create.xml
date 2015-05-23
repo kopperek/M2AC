@@ -9,9 +9,6 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:weightSum="1"
         android:paddingBottom="3dp"
         >
@@ -20,19 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Downloading..."
+            android:text=""
             android:id="@+id/tTaskName"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Layer: Ump-pcPl (1/12)"
+            android:text=""
             android:id="@+id/tSubTaskName"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Zoom: 14 (3/4)"
+            android:text=""
             android:id="@+id/tSubSubTaskName"/>
 
         <ProgressBar
@@ -48,7 +45,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:weightSum="3.0"
-        >
+                  android:baselineAligned="false">
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                       android:orientation="vertical"
                       android:layout_width="0dp"
@@ -59,7 +56,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Errors"
+                android:text="@string/label_errors"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView"
                 android:layout_alignParentRight="true"
@@ -71,7 +68,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@android:id/list"
-                android:layout_weight="1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView"/>
@@ -87,7 +83,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Try again for all layers"
+                android:text="@string/button_try_again_for_all_layers"
                 android:id="@+id/bTryAgainForAllLayers"
                 android:layout_above="@+id/bIgnoreAndContinue"
                 android:layout_alignParentLeft="true"
@@ -98,7 +94,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ignore errors and continue"
+                android:text="@string/button_ignore_errors_and_continue"
                 android:id="@+id/bIgnoreAndContinue"
                 android:layout_above="@+id/bCancel"
                 android:layout_alignParentLeft="true"
@@ -108,7 +104,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cancel"
+                android:text="@string/button_cancel"
                 android:id="@+id/bCancel"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"

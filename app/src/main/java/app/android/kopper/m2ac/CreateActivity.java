@@ -113,6 +113,7 @@ public class CreateActivity extends ListActivity {
     }
 
     private void cancel() {
+        ((TextView)findViewById(R.id.bCancel)).setText(getString(R.string.button_cancelling));
         getWindow().getDecorView().findViewById(android.R.id.content).setEnabled(false);
         tilesDownloadTask.interrupt(R.string.download_canceled);
     }

@@ -56,14 +56,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:layout_gravity="center"
-            android:text="Ignore errors and continue"
+            android:text="@string/button_ignore_errors_and_continue"
             android:id="@+id/bIgnoreAndContinue"
             />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:text="Cancel"
+            android:text="@string/button_cancel"
             android:id="@+id/bCancel"
             android:layout_weight="1.0"
             android:layout_gravity="center"
@@ -89,20 +89,20 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Errors"
+            android:text="@string/label_errors"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/textView4"/>
 
         <ListView
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:id="@android:id/list"
             android:layout_weight="1"/>
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Try again for all layers"
+            android:text="@string/button_try_again_for_all_layers"
             android:id="@+id/bTryAgainForAllLayers"
             />
 

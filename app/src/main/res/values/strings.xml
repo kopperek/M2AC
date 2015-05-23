@@ -2,6 +2,16 @@
 <resources>
     <string name="app_name">M2AC</string>
     <string name="atlas_created" formatted="false" >Atlas created:\n%s</string>
+    <string name="button_add_layers">Add layers</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_cancelling">Cancelling…</string>
+    <string name="button_create_atlas">Create atlas</string>
+    <string name="button_done">Done</string>
+    <string name="button_ignore_errors_and_continue">Ignore errors and continue</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_rename">Rename</string>
+    <string name="button_try_again">Try again</string>
+    <string name="button_try_again_for_all_layers">Try again for all layers</string>
     <string name="create">Create atlas</string>
     <string name="create_confirm" formatted="false" >You are about to download %d tiles. Continue?</string>
     <string name="dialog_cancel">Cancel</string>
@@ -12,23 +22,28 @@
     <string name="dialog_remove_confirm" formatted="false" >Do you really want to remove \'%s\' layer?</string>
     <string name="dialog_rename">Rename</string>
     <string name="dialog_yes">Yes</string>
-    <string name="download_canceled">Download canceled</string>
+    <string name="download_canceled">Download process was canceled</string>
     <string name="download_error" formatted="false" >Download error: %s</string>
     <string name="download_errors" formatted="false" >Errors: %d/%d</string>
     <string name="error_empty_atlas_name">Atlas name can not be empty</string>
     <string name="error_empty_layer_name">Layer name can not be empty</string>
     <string name="error_no_map_source">You have to provide at least one map source</string>
     <string name="errors_no_tiles">There is no tiles to download (You have to add at least one layer)</string>
-    <string name="progress_cleaning_out_dir">Cleaning out dir...</string>
-    <string name="progress_cleaning_tmp_dir">Cleaning tmp dir...</string>
-    <string name="progress_downloading">Downloading...</string>
-    <string name="progress_init">Init...</string>
-    <string name="progress_creating_atlas">Creating atlas...</string>
-    <string name="progress_filling_gaps">Filling gaps...</string>
-    <string name="progress_redownloading">Redownloading...</string>
+    <string name="label_atlas_name">Atlas name</string>
+    <string name="label_errors">Errors</string>
+    <string name="label_layer_name">Layer name</string>
+    <string name="label_layers">Layers</string>
+    <string name="label_map_sources">Map sources</string>
+    <string name="progress_cleaning_out_dir">Cleaning out dir…</string>
+    <string name="progress_cleaning_tmp_dir">Cleaning tmp dir…</string>
+    <string name="progress_creating_atlas">Creating atlas…</string>
+    <string name="progress_downloading">Downloading…</string>
+    <string name="progress_filling_gaps">Filling gaps…</string>
+    <string name="progress_init">Init…</string>
+    <string name="progress_redownloading">Redownloading…</string>
     <string name="progress_sub_layer" formatted="false" >Layer: %s (%d/%d)</string>
     <string name="progress_sub_layer_zoom" formatted="false" >%s/%s</string>
     <string name="progress_sub_sub_string" formatted="false" >%s</string>
     <string name="progress_sub_sub_zoom" formatted="false" >Zoom: %d (%d/%d)</string>
-    <string name="progress_wait">Wait for user...</string>
+    <string name="progress_wait">Wait for user…</string>
 </resources>
