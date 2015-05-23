@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="3.0"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="2.0"
+        >
+        <include layout="@layout/include_layers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="3dp"
+        android:background="#d0d0d0"
+        android:layout_weight="0.01"
+        android:padding="2dp"
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="0.99"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atlas name"
+            android:id="@+id/atlasNameLabel"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tAtlasName"
+            android:inputType="text"
+            android:layout_below="@+id/atlasNameLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create atlas"
+            android:id="@+id/bCreateAtlas"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
