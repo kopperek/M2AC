@@ -146,22 +146,18 @@ public class CreateActivity extends ListActivity {
     }
 
     private void downloadFinished(DownloadResult downloadResult) {
-        try {
-            AlertDialog alertDialog;
-            alertDialog = new AlertDialog.Builder(this).create();
-            alertDialog.setCanceledOnTouchOutside(false);
-            alertDialog.setMessage(String.format(getText(downloadResult.getMessageKey()).toString(),downloadResult.getMessageParams()));
-            alertDialog.setTitle(getText(R.string.dialog_finished));
-            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, getText(R.string.dialog_ok),
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            finish();
-                        }
-                    });
-            alertDialog.show();
-        } catch(Exception e) {
-            LogUtil.e(e);
-        }
+        AlertDialog alertDialog;
+        alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setCanceledOnTouchOutside(false);
+        alertDialog.setMessage(String.format(getText(downloadResult.getMessageKey()).toString(),downloadResult.getMessageParams()));
+        alertDialog.setTitle(getText(R.string.dialog_finished));
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, getText(R.string.dialog_ok),
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+        alertDialog.show();
     }
 
     public TilesDownloadTask getTilesDownloadTask() {
