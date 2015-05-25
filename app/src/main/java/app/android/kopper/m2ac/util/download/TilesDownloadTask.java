@@ -320,7 +320,8 @@ public class TilesDownloadTask extends AsyncTask<AtlasDef,DownloadState,Download
     @Override
     protected void onProgressUpdate(DownloadState... values) {
         super.onProgressUpdate(values);
-        createActivity.publishProgress(values[0]);
+        if(createActivity!=null)
+            createActivity.publishProgress(values[0]);
     }
 
     public void setCreateActivity(CreateActivity createActivity) {

@@ -163,4 +163,10 @@ public class CreateActivity extends ListActivity {
     public TilesDownloadTask getTilesDownloadTask() {
         return tilesDownloadTask;
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        tilesDownloadTask.setCreateActivity(null);
+    }
 }
